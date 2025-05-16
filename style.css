@@ -1,79 +1,130 @@
-* {
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.backcolor {background-color: black;}
+
+.fontcolor {color: white;}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.gridcontainer {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  grid-auto-flow: row dense;
+  justify-items: center;
+  }
+
+.gridcontainer img:hover {
+  transform: scale(1.5);
 
 }
 
-body {background-color: #EAD2E6;
+.gridItem {
+
+
+    margin-top: 20px;
+    width: 800px;
+
+    margin-bottom: auto;
+    padding-bottom: auto;
+
+
+  }
+
+  .imgsize{
+
+    width: 800px
+
+  }
+
+.vidsize { margin-left: 10px;
+  width: 1000px;
 
 }
 
-p {
-text-align: center;color: #1E1940; font-size: 20px;
-}
-
-
-nav {
-
-position: sticky;
-top: 0;
-
-}
-nav ul { text-align: center;
-  list-style-type: none;
-background-color: #D8B4D5;
+.imgsize2{
+  margin-top: 20px;
 
 }
 
-nav ul li {
 
-  display:inline-block;
-  padding: 10px
 
+.font{
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-ul li {font-size: 20px;}
-
-a:link { color:#1E1940;
-
-}
-a:visited { color: #E14273;
-
+.font2{
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 5px
 }
 
-a:hover {
+.sizefont {font-size: 130px;
+text-align: center;}
 
-}
+.sizefont2 {font-size: 50px;
+;}
 
-img { padding-left: 25px
-
-}
-#d_position {font-family: monospace;font-size: 20px; padding-top: 0px}
-
-#turnaround {
-  display: block;
-  margin: auto;
-}
-
-#desired_position {padding-bottom: 0px;}
-
-#icon {display:block;
-margin: auto;padding-left: 0px}
-
-ul {
-
-}
-
-h1 {
+.center {
   text-align: center;
 }
-
-h2 { padding-top:50px;font-size: 32px;
-  text-align: center;color: #301646
+.center2 {
+  margin: auto;
+  display: block;
 }
 
-nav {
+.linkstyle { text-decoration: underline;
+  font-size: 40px;
+  color: white
 
 }
 
 
-head img { align-items: center;
+.headdecor{
+  color: white;
+  text-decoration: none;
+
+}
+.top-center {
+  position: absolute;
+  font-size: 140px;
+  text-align: center;
+  margin-top: 18%;
+  margin-left: 16%;
+
+
+}
+
+.width {width: 100%}
+
+.navbar {
+
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-decoration: none;
+
+
+
+}
+
+.padding {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 100px;
+  margin: auto;
 }
