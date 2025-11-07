@@ -48,35 +48,49 @@ letter-spacing: 1px;}
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
+  grid-template-columns: auto auto auto;
+  align-items: center;
 
 }
 
 .container2 {
-  display: flex;
-  flex-wrap: wrap;
+   display: grid;
   justify-content: center;
-
+  grid-template-columns: auto auto auto;
+  width: 95%;
+   align-items: center;
+  
 }
+
+
 
 .container3 {
 display: grid;
  grid-template-areas:
-    "turn turn turn"
-    "gif o o "
+    "turn turn gif"
+   "turn2 turn2 gif"
+    "o o o "
     "sheet sheet sheet"
     "icon icon icon"
     "symbol symbol text";
   grid-template-columns: auto auto auto;
+max-width: 1000px;
 
 }
+
+.mar{
+    margin: auto;
+}
+
 .container3 div.turn {
     grid-area: turn;
 
 }
-
+.container3 div.turn2 {
+grid-area: turn2;
+}
 .container3 div.gif {
 grid-area: gif;
 }
@@ -98,11 +112,13 @@ grid-area: text;
 display: grid;
  grid-template-areas:
     "sign diner diner "
-    "o o o"
+    "o o r"
     "menu safety l "
-    "icon icon icon"
+    "menu safety l "
+    "menu safety l "
     "symbol symbol text";
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 50% 50% 50%;
+  max-width: 1000px;
 
 }
 
@@ -130,8 +146,8 @@ grid-area: menu;
 display: grid;
  grid-template-areas:
     "lil lil lil" 
-    "o o o"
-    "event event ticket"
+    "event event o"
+    "ticket ticket ticket"
     "icon icon icon"
     "mock mockup mockupp"
     "e e e"
@@ -139,7 +155,7 @@ display: grid;
     "l t t"
     "video video video";
   grid-template-columns: auto auto auto;
-
+max-width: 1000px;
 }
 
 .container5 div.lil {
@@ -189,10 +205,34 @@ grid-area: l;}
 
 .container6 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-
+  grid-template-areas: 
+  "q w "
+  "e r "
+  "t y "
+  "u i ";
+  grid-template-columns: 50% 50%  ;
+  max-width: 1200px;
+justify-content: center;
+align-items: center;
+margin: auto;
 }
+
+.container6 div.q {
+grid-area: q;}
+.container6 div.w {
+grid-area: w;}
+.container6 div.e {
+grid-area: e;}
+.container6 div.r {
+grid-area: r;}
+.container6 div.t {
+grid-area: t;}
+.container6 div.y {
+grid-area: y;}
+.container6 div.u {
+grid-area: u;}
+.container6 div.i {
+grid-area: i;}
 
 .container7{
     display: grid;
@@ -201,7 +241,8 @@ grid-area: l;}
     "o o o"
     ;
   grid-template-columns: auto auto auto;
-
+max-width: 1000px;
+margin:auto
 
 }
 
@@ -238,6 +279,10 @@ grid-area: alana;}
     padding-left: 25px;
 
 }
+
+.padding4{
+    padding-top: 10px;
+}
 .textsize1{
     font-size: 30px;
 }
@@ -248,6 +293,9 @@ grid-area: alana;}
 
 .textsize3{
     font-size: 50px;
+}
+.textsize4{
+    font-size: 25px;
 }
 
 .nodeco{
@@ -266,17 +314,19 @@ img{width:100%;}
 } */
 
 .gridItem{
-    width:45%;
+    width:100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .gridItem2{
-    width: 65%;
-    
-    
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 
 }
 
 .elevatorpadding{
-   padding: 10px;
+   padding: 5px;
 }
 .backcolor{ background-color: #f1e6fd;}
 .shadow{
