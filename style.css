@@ -51,7 +51,7 @@ letter-spacing: 1px;}
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+padding: 20px;
 }
 
 .container2 {
@@ -313,12 +313,12 @@ img{width:100%;}
 } */
 
 .gridItem{
-    width:100%;
+   max-width:100%;
     padding: 20px;
     box-sizing: border-box;
 }
 .gridItem2{
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     box-sizing: border-box;
 
