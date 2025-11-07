@@ -12,6 +12,214 @@
     src: url('fonts/MouseMemoirs-Regular.ttf') format('truetype');
 }
 
+@media (max-width: 767px){
+
+body{
+    font-size: 16px;
+
+}
+.container3 {
+display: grid;
+ grid-template-areas:
+    "turn turn gif"
+   "turn2 turn2 gif"
+    "o o o "
+    "sheet sheet sheet"
+    "icon icon icon"
+    "symbol symbol text";
+  grid-template-columns: auto auto auto;
+max-width: 95%;
+
+}
+.container3 {
+display: grid;
+ grid-template-areas:
+    "turn turn gif"
+   "turn2 turn2 gif"
+    "o o o "
+    "sheet sheet sheet"
+    "icon icon icon"
+    "symbol symbol text";
+  grid-template-columns: auto auto auto;
+max-width: 95%;
+
+}
+
+.mar{
+    margin: auto;
+}
+
+.container3 div.turn {
+    grid-area: turn;
+
+}
+.container3 div.turn2 {
+grid-area: turn2;
+}
+.container3 div.gif {
+grid-area: gif;
+}
+.container3 div.sheet {
+grid-area: sheet;
+}
+
+.container3 div.icon {
+grid-area: icon;
+}
+.container3 div.symbol {
+grid-area: symbol;
+}
+.container3 div.text {
+grid-area: text;
+}
+
+.container4 {
+display: grid;
+ grid-template-areas:
+    "sign diner diner "
+    "o o r"
+    "menu safety l "
+    "menu safety l "
+    "menu safety l "
+    "symbol symbol text";
+  grid-template-columns: 50% 50% 50%;
+  max-width: 95%;
+
+}
+
+.container4 div.sign {
+grid-area: sign;
+}
+.container4 div.diner {
+grid-area: diner;
+}
+
+.container4 div.o {
+grid-area: o;
+}
+
+.container4 div.safety {
+grid-area: safety;
+}
+
+.container4 div.menu {
+grid-area: menu;
+}
+
+
+.container5 {
+display: grid;
+ grid-template-areas:
+    "lil lil lil" 
+    "event event o"
+    "ticket ticket ticket"
+    "icon icon icon"
+    "mock mockup mockupp"
+    "e e e"
+    "picto picto picto"
+    "l t t"
+    "video video video";
+  grid-template-columns: auto auto auto;
+max-width: 95%;
+}
+
+.container5 div.lil {
+grid-area: lil;
+}
+
+.container5 div.icon {
+grid-area: icon;
+}
+
+.container5 div.mockup {
+grid-area: mockup;
+}
+
+.container5 div.mockupp {
+grid-area: mockupp;
+}
+
+.container5 div.mock {
+grid-area: mock;
+}
+
+.container5 div.picto {
+grid-area: picto;
+}
+
+.container5 div.event {
+grid-area: event;
+}
+
+.container5 div.ticket {
+grid-area: ticket;
+}
+
+.container5 div.video {
+grid-area: video;
+}
+
+.container5 div.o {
+grid-area: o;}
+
+.container5 div.e {
+grid-area: e;}
+
+.container5 div.l {
+grid-area: l;}
+
+.container6 {
+  display: grid;
+  grid-template-areas: 
+  "q w "
+  "e r "
+  "t y "
+  "u i ";
+  grid-template-columns: 50% 50%  ;
+  max-width: 95%;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+.container6 div.q {
+grid-area: q;}
+.container6 div.w {
+grid-area: w;}
+.container6 div.e {
+grid-area: e;}
+.container6 div.r {
+grid-area: r;}
+.container6 div.t {
+grid-area: t;}
+.container6 div.y {
+grid-area: y;}
+.container6 div.u {
+grid-area: u;}
+.container6 div.i {
+grid-area: i;}
+
+.container7{
+    display: grid;
+ grid-template-areas:
+    "text alana alana" 
+    "o o o"
+    ;
+  grid-template-columns: auto auto auto;
+max-width: 95%;
+margin:auto
+
+}
+
+.container7 div.text {
+grid-area: text;}
+
+.container7 div.alana {
+grid-area: alana;}
+
+
+
+}
 
 .mangofont{
     font-family: "Mango";
