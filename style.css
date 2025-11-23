@@ -208,8 +208,9 @@ grid-area: l;}
   grid-template-areas: 
   "q w "
   "e r "
-  "t y "
-  "u i ";
+  "i y "
+  "u t "
+  "m n";
   grid-template-columns: 50% 50%  ;
   max-width: 1200px;
 justify-content: center;
@@ -233,6 +234,11 @@ grid-area: y;}
 grid-area: u;}
 .container6 div.i {
 grid-area: i;}
+.container6 div.m {
+grid-area: m;}
+.container6 div.n {
+grid-area: n;}
+
 
 .container7{
     display: grid;
