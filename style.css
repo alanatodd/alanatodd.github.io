@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
 @font-face {
     font-family:"Cartoon" ;
     src: url('fonts/Carton_Six.ttf') format('truetype');
@@ -5,11 +7,7 @@
 
 @font-face {
     font-family: "Mango";
-    src: url('fonts/Mango\ Nice.ttf') format('truetype');
-}
-@font-face {
-    font-family: "Mouse";
-    src: url('fonts/MouseMemoirs-Regular.ttf') format('truetype');
+    src: url('https://alanatodd.github.io/fonts/Mango\ Nice.ttf') format('truetype');
 }
 
 
@@ -24,13 +22,110 @@
     font-size: 75px;
 }
 .Mousefont{
-    font-family: "Mouse";
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 letter-spacing: 1px;}
 
     .cartonfont{
     font-family:"Cartoon" ;
     font-size: 50px;
     letter-spacing: 2px;
+}
+
+.main-wrapper{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 40px 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* City Rebrand Grid Layouts */
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.city-grid-single {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+/* Project Grid for Index Page */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-info {
+    text-align: center;
+}
+
+.project-info h3 {
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #2F1846;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #A14AE3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #FFD39D;
 }
 
 .titlecolor{
@@ -76,8 +171,13 @@ display: grid;
     "icon icon icon"
     "symbol symbol text";
   grid-template-columns: auto auto auto;
-max-width: 1000px;
-
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .mar{
@@ -111,15 +211,18 @@ grid-area: text;
 .container4 {
 display: grid;
  grid-template-areas:
-    "sign diner diner "
-    "o o r"
-    "menu safety l "
-    "menu safety l "
-    "menu safety l "
-    "symbol symbol text";
-  grid-template-columns: 50% 50% 50%;
+    "sign sign diner diner"
+    "description description description description"
+    "menu menu safety safety"
+    "posters posters posters posters";
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
-
+  margin: 0 auto;
+  padding: 40px;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .container4 div.sign {
@@ -130,7 +233,7 @@ grid-area: diner;
 }
 
 .container4 div.o {
-grid-area: o;
+grid-area: description;
 }
 
 .container4 div.safety {
@@ -145,21 +248,39 @@ grid-area: menu;
 .container5 {
 display: grid;
  grid-template-areas:
-    "lil lil lil" 
-    "event event o"
-    "ticket ticket ticket"
-    "icon icon icon"
-    "mock mockup mockupp"
-    "e e e"
-    "picto picto picto"
-    "l t t"
-    "video video video";
-  grid-template-columns: auto auto auto;
-max-width: 1000px;
+    "intro intro intro intro" 
+    "lil lil lil lil"
+    "event-title event-title event-title event-title"
+    "event event event description"
+    "ticket ticket ticket ticket"
+    "icon icon icon icon"
+    "mock mockup mockupp mockupp"
+    "picto-title picto-title picto-title picto-title"
+    "picto-desc picto-desc picto-desc picto-desc"
+    "picto picto picto picto"
+    "video-title video-title video-title video-title";
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.container5 div.event {
 .container5 div.lil {
 grid-area: lil;
+}
+
+.container5 div.lil img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container5 div.intro {
+grid-area: intro;
 }
 
 .container5 div.icon {
@@ -190,6 +311,32 @@ grid-area: event;
 grid-area: ticket;
 }
 
+.container5 div.description {
+grid-area: description;
+}
+
+.container5 div.event-title {
+grid-area: event-title;
+}
+
+.container5 div.picto-title {
+grid-area: picto-title;
+}
+
+.container5 div.picto-desc {
+grid-area: picto-desc;
+}
+
+.container5 div.video-title {
+grid-area: video-title;
+}
+grid-area: event;
+}
+
+.container5 div.ticket {
+grid-area: ticket;
+}
+
 .container5 div.video {
 grid-area: video;
 }
@@ -208,14 +355,18 @@ grid-area: l;}
   grid-template-areas: 
   "q w "
   "e r "
-  "i y "
-  "u t "
-  "m n";
-  grid-template-columns: 50% 50%  ;
+  "t y "
+  "u i ";
+  grid-template-columns: 50% 50%;
   max-width: 1200px;
-justify-content: center;
-align-items: center;
-margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 40px;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .container6 div.q {
@@ -234,21 +385,21 @@ grid-area: y;}
 grid-area: u;}
 .container6 div.i {
 grid-area: i;}
-.container6 div.m {
-grid-area: m;}
-.container6 div.n {
-grid-area: n;}
-
 
 .container7{
     display: grid;
- grid-template-areas:
+    grid-template-areas:
     "text alana alana" 
-    "o o o"
-    ;
-  grid-template-columns: auto auto auto;
-max-width: 1000px;
-margin:auto
+    "o o o";
+    grid-template-columns: auto auto auto;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
 }
 
@@ -328,12 +479,114 @@ img{width:100%;}
     max-width: 100%;
     padding: 10px;
     box-sizing: border-box;
+}
 
+/* Image Caption Styles */
+.img-caption {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #2F1846;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Improved image display */
+.gridItem2 img, .gridItem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Content grouping */
+.content-group {
+    background-color: rgba(255, 211, 157, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
 }
 
 .elevatorpadding{
    padding: 5px;
 }
+
+/* Project Page Improvements */
+.title-home {
+    margin-bottom: 10px;
+}
+
+.intro-pitch {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 10px 20px;
+}
+
+.project-intro {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-nav {
+    background-color: rgba(255, 211, 157, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.project-nav h4 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.project-nav a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+.video {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video .img-caption {
+    margin-top: 15px;
+}
+
 .backcolor{ background-color: #f1e6fd;}
 .shadow{
     text-shadow: 2px 2px rgb(166, 50, 4);
@@ -352,6 +605,206 @@ img{width:100%;}
 padding-top: 30px;
 
  }
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #FFD39D;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Single column layout for index page */
+    .container2 {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* Project grid becomes single column */
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    /* City grids become single column */
+    .city-grid,
+    .city-grid-single {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        margin: 30px auto;
+    }
+    
+    /* Project containers become single column */
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container7 {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+        padding: 20px;
+        gap: 20px;
+        max-width: 95%;
+    }
+    
+    .container3 > div,
+    .container4 > div,
+    .container5 > div,
+    .container6 > div,
+    .container7 > div {
+        grid-area: auto;
+    }
+    
+    /* Hamburger menu visible on mobile */
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Hide navbar by default on mobile */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #f1e6fd;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar.active {
+        display: flex;
+    }
+    
+    .navbar div {
+        padding: 30px;
+    }
+    
+    .navbar div a {
+        font-size: 30px;
+    }
+    
+    .mangofont {
+        font-size: 60px;
+    }
+    
+    .textsize1, .textsize2 {
+        font-size: 18px;
+    }
+    
+    .cartonfont {
+        font-size: 35px;
+    }
+    
+    .project-info h3 {
+        font-size: 30px;
+    }
+    
+    .intro-pitch {
+        font-size: 16px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 95%;
+        padding: 30px;
+    }
+    
+    .container3,
+    .container4,
+    .container5 {
+        grid-template-columns: 1fr 1fr;
+        max-width: 95%;
+        padding: 30px;
+        gap: 25px;
+    }
+    
+    .container6 {
+        grid-template-columns: 1fr 1fr;
+        max-width: 95%;
+        padding: 30px;
+        gap: 20px;
+    }
+    
+    .container7 {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text"
+            "alana";
+        max-width: 95%;
+        padding: 30px;
+    }
+    
+    .container3 {
+        grid-template-areas:
+            "turn gif"
+            "turn2 gif"
+            "o o"
+            "sheet sheet"
+            "icon icon"
+            "symbol text";
+    }
+    
+    .container4 {
+        grid-template-areas:
+            "sign diner"
+            "description description"
+            "menu safety"
+            "posters posters";
+    }
+    
+    .container5 {
+        grid-template-areas:
+            "intro intro"
+            "lil lil"
+            "event-title event-title"
+            "event description"
+            "ticket ticket"
+            "icon icon"
+            "mock mockup"
+            "mockupp mockupp"
+            "picto-title picto-title"
+            "picto-desc picto-desc"
+            "picto picto"
+            "video-title video-title";
+    }
+}
+
 
  @media (max-width: 1120px){
 
@@ -560,7 +1013,8 @@ margin:auto
     font-size: 25px;
 }
 .Mousefont{
-    font-family: "Mouse";
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 letter-spacing: 1px;}
 
     .cartonfont{

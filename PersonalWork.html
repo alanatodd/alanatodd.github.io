@@ -7,42 +7,93 @@
     <title>Personal Work</title>
 </head>
 <body class="backcolor">
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
      <a href="index.html" class="nodeco"><h1 class="center mangofont titlecolor title">ALANA TODD</h1></a>
 
      
      <hr class="hr1">
-     <div class="nodeco navbar cartonfont  padding container">
+     <div class="nodeco navbar cartonfont  padding container" id="navbar">
 
   
   
   <div><a href="PersonalWork.html" class="headingcolor nodeco  padding shadow"> PERSONAL WORK </a></div>
+  <div><a href="VenusAcademy.html" class="headingcolor nodeco  padding shadow"> VENUS ACADEMY </a></div>
+  <div><a href="JetStartum.html" class="headingcolor nodeco  padding shadow"> JET STARTUM </a></div>
+  <div><a href="CityRebrand.html" class="headingcolor nodeco  padding shadow"> OCHO RIOS </a></div>
   <div><a href="Contact.html" class="headingcolor nodeco padding shadow"> CONTACT</a></div>
 </div>
 <hr class="hr1">
 
 <div class="container6 padtop"> 
   
-  
-  <div class="gridItem2 mar q"><img src="TheShowstoppers.png" alt=""></div>
-<div class="gridItem2 mar w"><img src="Storybook.png" alt=""></div>
-<div class="gridItem2 mar e"><img src="TiaraV2.png" alt=""></div>
-<div class="gridItem2 mar r"><img src="LotusPrison.png" alt=""></div>
-<div class="gridItem2 mar  t"><img src="BP_Icons.png" alt=""></div>
-<div class="gridItem2 mar m"><img src="Chips.png" alt=""></div>
-<div class="gridItem2 mar  u"><img src="FinalCollage.png" alt=""></div>
-<div class="gridItem2 mar  y"><img src="Cut_Paper.png" alt=""></div>
-<div class="gridItem2 mar i "><img src="Princess.png" alt=""></div>
+  <div class="gridItem2 mar q">
+    <img src="TheShowstoppers.jpg" alt="The Showstoppers illustration">
+    <p class="img-caption">The Showstoppers - Character illustration</p>
+  </div>
+  <div class="gridItem2 mar w">
+    <img src="Storybook.jpg" alt="Storybook illustration">
+    <p class="img-caption">Storybook-style narrative art</p>
+  </div>
+  <div class="gridItem2 mar e">
+    <img src="Tiara2.png" alt="Tiara character design">
+    <p class="img-caption">Tiara character design</p>
+  </div>
+  <div class="gridItem2 mar r">
+    <img src="LotusPrison.jpg" alt="Lotus Prison illustration">
+    <p class="img-caption">Lotus Prison - Environmental illustration</p>
+  </div>
+  <div class="gridItem2 mar t">
+    <img src="Alana_Cut_Paper.png" alt="Cut paper art">
+    <p class="img-caption">Cut paper layered artwork</p>
+  </div>
+  <div class="gridItem2 mar y">
+    <img src="Todd_Alana_BPicons.png" alt="Icon designs">
+    <p class="img-caption">Brand identity icon set</p>
+  </div>
+  <div class="gridItem2 mar u">
+    <img src="Todd_Alana_package_final_4.jpg" alt="Package design">
+    <p class="img-caption">Product packaging design</p>
+  </div>
+  <div class="gridItem2 mar i">
+    <img src="FinalCollage.jpg" alt="Mixed media collage">
+    <p class="img-caption">Mixed media collage work</p>
+  </div>
 
 </div>
 
 <div class="video">
-  <video width="640 px" height="480 px" controls>
-  <source src="Narrative_Type_1.mp4" type="video/mp4">
-  
-</video>
-
+  <video width="640" height="480" controls>
+    <source src="Narrative_Type_1.mp4" type="video/mp4">
+  </video>
+  <p class="img-caption">Narrative typography animation</p>
 </div>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navbar.classList.toggle('active');
+    });
+    
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navbar.classList.remove('active');
+        });
+    });
+});
+</script>
 
 </body>
 </html>

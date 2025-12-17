@@ -7,34 +7,87 @@
     <title>Project Venus Academy</title>
 </head>
 <body class="backcolor">
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
      <a href="index.html" class="nodeco"><h1 class="center mangofont titlecolor title">ALANA TODD</h1></a>
 
      
      <hr class="hr1">
-     <div class="nodeco navbar cartonfont  padding container">
+     <div class="nodeco navbar cartonfont  padding container" id="navbar">
 
   
  
   <div><a href="PersonalWork.html" class="headingcolor nodeco  padding shadow"> PERSONAL WORK </a></div>
+  <div><a href="JetStartum.html" class="headingcolor nodeco  padding shadow"> JET STARTUM </a></div>
+  <div><a href="CityRebrand.html" class="headingcolor nodeco  padding shadow"> OCHO RIOS </a></div>
   <div><a href="Contact.html" class="headingcolor nodeco padding shadow"> CONTACT</a></div>
 </div>
 <hr class="hr1">
 
-<div class=" center padding4 ">  <img src="small_venus_academy-03.png"   alt=""></div>
-  <p class=" Mousefont textsize4">Venus Academy is a passion project that follows Alexis Witherfly as she attends Venus Academy a few years after a devastating tragedy dealt to her and her family involving the summoning of her new contract demon. She navigates a difficult school life as she tries to find a way to fix the damage done. But, Venus Academy is not making it easy for her, the  very halls themselves aim to ensnare her as she gets too close to secrets that should never be uncovered.</p>
+<div class="project-intro">
+  <img src="small_venus_academy-03.png" alt="Venus Academy Logo">
+  <p class="Mousefont">Venus Academy is a passion project that follows Alexis Witherfly as she attends Venus Academy a few years after a devastating tragedy dealt to her and her family involving the summoning of her new contract demon. She navigates a difficult school life as she tries to find a way to fix the damage done. But, Venus Academy is not making it easy for her, the very halls themselves aim to ensnare her as she gets too close to secrets that should never be uncovered.</p>
+</div>
 
-   <h3 class="cartonfont headingcolor shadow">Character Turnaround: Alexis Witherfly</h3>
+<h3 class="cartonfont headingcolor shadow section-title">Character Turnaround: Alexis Witherfly</h3>
   <div class="container3">
-<div class="gridItem2 turn"><img src="Alexis_Turnaround1.png" alt=""></div>
-<div class="gridItem2 turn2"><img src="Alexis_Turnaround2.png" alt=""></div>
-<div class="gridItem2 gif mar"><img src="Animation2.gif" alt=""></div>
+<div class="gridItem2 turn">
+  <img src="Alexis_Turnaround1.png" alt="Alexis character turnaround front and side view">
+  <p class="img-caption">Character turnaround - Front and side views</p>
+</div>
+<div class="gridItem2 turn2">
+  <img src="Alexis_Turnaround2.png" alt="Alexis character turnaround back view">
+  <p class="img-caption">Character turnaround - Back view and details</p>
+</div>
+<div class="gridItem2 gif mar">
+  <img src="Animation2.gif" alt="Alexis walking animation">
+  <p class="img-caption">Character walk cycle animation</p>
+</div>
 
-<div class="gridItem2 sheet"><h3 class="cartonfont headingcolor shadow">Character Development: Alexis Witherfly</h3><img src="Character_Sheet.png" alt=""></div>
-<div class="gridItem2 icon"> <img src="Alexis_Witherfly_icons-01.png" alt=""></div>
-<div class="gridItem2 symbol"><h3 class="cartonfont headingcolor shadow">Symbology</h3><img src="symbol-05-05.png" alt=""> </div>
+<div class="gridItem2 sheet">
+  <h3 class="cartonfont headingcolor shadow section-title">Character Development: Alexis Witherfly</h3>
+  <img src="Character_Sheet.png" alt="Character development sheet">
+  <p class="img-caption">Expression studies and character notes</p>
+</div>
+<div class="gridItem2 icon">
+  <img src="Alexis_Witherfly_icons-01.png" alt="Alexis icon variations">
+  <p class="img-caption">Character icons for various uses</p>
+</div>
+<div class="gridItem2 symbol">
+  <h3 class="cartonfont headingcolor shadow section-title">Symbology</h3>
+  <img src="symbol-05-05.png" alt="Venus Academy double eye symbol">
+  <p class="img-caption">The Double Eye symbol of Venus Academy</p>
+</div>
 
-<div class="text gridItem2"><p class=" Mousefont textsize2 padding3">This is the symbol of the Venus Academy, the Double Eye. It represents both the Venus flytrap, where the Academy gets its namesake and the everwatching eye of the Academy.</p> </div>
+<div class="text gridItem2">
+  <p class="Mousefont textsize2 padding3">This is the symbol of the Venus Academy, the Double Eye. It represents both the Venus flytrap, where the Academy gets its namesake and the everwatching eye of the Academy.</p>
+</div>
   </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navbar.classList.toggle('active');
+    });
+    
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navbar.classList.remove('active');
+        });
+    });
+});
+</script>
 
 </body>
 </html>

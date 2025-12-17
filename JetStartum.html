@@ -7,31 +7,74 @@
     <title>Jet Startum Project</title>
 </head>
 <body class="backcolor">
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
      <a href="index.html" class="nodeco"><h1 class="center mangofont titlecolor title">ALANA TODD</h1></a>
 
      
      <hr class="hr1">
-     <div class="nodeco navbar cartonfont  padding container">
+     <div class="nodeco navbar cartonfont  padding container" id="navbar">
 
   
   
   <div><a href="PersonalWork.html" class="headingcolor nodeco  padding shadow"> PERSONAL WORK </a></div>
+  <div><a href="VenusAcademy.html" class="headingcolor nodeco  padding shadow"> VENUS ACADEMY </a></div>
+  <div><a href="CityRebrand.html" class="headingcolor nodeco  padding shadow"> OCHO RIOS </a></div>
   <div><a href="Contact.html" class="headingcolor nodeco padding shadow"> CONTACT</a></div>
 </div>
 <hr class="hr1">
 
+<div class="project-intro">
+  <p class="Mousefont textsize2">Jet Startum is a space diner in the far future. Owned by the sweetest rich old guy and filled with lovely ladies, Jet Startum Diner promises a place to feast your eyes and sate your hunger.</p>
+</div>
 
-<p class="center Mousefont textsize2">Jet Startum is a space diner in the far future. Owned by the sweetest rich old guy and filled with lovely ladies, Jet Startum Diner promises a place to feast your eyes and sate your hunger. </p>
-
-<h3 class="cartonfont headingcolor shadow">Jet Startum Diner:</h3>
+<h3 class="cartonfont headingcolor shadow section-title">Jet Startum Diner:</h3>
 <div class="container4">
-  
-  <div class="gridItem2 sign mar ">  <img src="JetStartum_Diner_sign-01.png"   alt=""></div>
-  <div class="gridItem2 diner ">  <img src="JetStartum_Diner-01.png"   alt=""></div>
-  <div class="o gridItem2"><p class=" Mousefont textsize2 ">The style of the Jet Startum Diner is inspired by 1960s retro futurism and cartoon pinups.</p>
-  <h3 class="cartonfont headingcolor shadow">Jet Startum Posters:</h3></div>
-  <div class="gridItem2 menu mar ">  <img src="Startum_Menu-01.png"   alt=""></div>
-  <div class="gridItem2 safety "> <img src="Choking Hazard.png"   alt=""></div>
+  <div class="gridItem2 sign mar">
+    <img src="JetStartum_Diner_sign-01.png" alt="Jet Startum Diner neon sign">
+    <p class="img-caption">Retro-futuristic diner sign design</p>
   </div>
+  <div class="gridItem2 diner">
+    <img src="JetStartum_Diner-01.png" alt="Jet Startum Diner full illustration">
+    <p class="img-caption">Complete diner exterior illustration</p>
+  </div>
+  <div class="o gridItem2">
+    <p class="Mousefont textsize2">The style of the Jet Startum Diner is inspired by 1960s retro futurism and cartoon pinups.</p>
+    <h3 class="cartonfont headingcolor shadow section-title">Jet Startum Posters:</h3>
+  </div>
+  <div class="gridItem2 menu mar">
+    <img src="Startum_Menu-01.png" alt="Jet Startum menu poster">
+    <p class="img-caption">Vintage-style menu poster</p>
+  </div>
+  <div class="gridItem2 safety">
+    <img src="Choking%20Hazard.png" alt="Safety poster">
+    <p class="img-caption">Retro safety signage</p>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navbar.classList.toggle('active');
+    });
+    
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navbar.classList.remove('active');
+        });
+    });
+});
+</script>
+
 </body>
 </html>

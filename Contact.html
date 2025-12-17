@@ -7,22 +7,32 @@
     <title>Contact</title>
 </head>
 <body class="backcolor">
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
      <a href="index.html" class="nodeco"><h1 class="center mangofont titlecolor title">ALANA TODD</h1></a>
 
      
      <hr class="hr1">
-     <div class="nodeco navbar cartonfont  padding container">
+     <div class="nodeco navbar cartonfont  padding container" id="navbar">
 
   
  <div><a href="PersonalWork.html" class="headingcolor nodeco  padding shadow"> PERSONAL WORK </a></div>
+  <div><a href="VenusAcademy.html" class="headingcolor nodeco  padding shadow"> VENUS ACADEMY </a></div>
+  <div><a href="JetStartum.html" class="headingcolor nodeco  padding shadow"> JET STARTUM </a></div>
+  <div><a href="CityRebrand.html" class="headingcolor nodeco  padding shadow"> OCHO RIOS </a></div>
   <div><a href="Contact.html" class="headingcolor nodeco padding shadow"> CONTACT</a></div>
 </div>
 <hr class="hr1">
 
-<div class="container7"> <div class="gridItem2 text"><p class=" Mousefont textsize1 textcolor elevatorpadding">I am artist that fancies whimsy. All my artwork, the animations, the illustrations, and graphic designs reflect my love of whimsy and fantasy. My art is different combinations of children’s fantasy picturebooks, the fluid style of handdrawn animation, and the exaggerated flat graphic style of 1960s cartoon ads. </p> 
+<div class="container7"> <div class="gridItem2 text"><p class=" Mousefont textsize2 textcolor elevatorpadding">I am an artist that fancies whimsy. All my artwork, the animations, the illustrations, and graphic designs reflect my love of whimsy and fantasy. My art is different combinations of children’s fantasy picturebooks, the fluid style of handdrawn animation, and the exaggerated flat graphic style of 1960s cartoon ads. </p> 
     <h3 ><a class="cartonfont headingcolor shadow" href="Resume_converted2.pdf" target="_blank">Resume</a></h3>
 
-<h3 ><a class="cartonfont headingcolor shadow" href="www.linkedin.com/in/alana-todd-75a5aa2b9" target="_blank">LinkedIn</a></h3></div>
+<h3 ><a class="cartonfont headingcolor shadow" href="https://alanatodd.github.io/www.linkedin.com/in/alana-todd-75a5aa2b9" target="_blank">LinkedIn</a></h3></div>
 
 <div class="gridItem2 alana">
 
@@ -40,6 +50,26 @@
 
 
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navbar.classList.toggle('active');
+    });
+    
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navbar.classList.remove('active');
+        });
+    });
+});
+</script>
 
 </body>
 

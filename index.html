@@ -8,27 +8,82 @@
     <title>Alana Todd Portfolio</title>
 </head>
 <body class="backcolor">
-    
-  <a href="index.html" class="nodeco"><h1 class="center mangofont nodeco titlecolor">ALANA TODD</h1></a>
 
-    <div><p class="center Mousefont textsize1 textcolor elevatorpadding"> I am
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <a href="index.html" class="nodeco"><h1 class="center mangofont nodeco titlecolor title-home">ALANA TODD</h1></a>
+
+    <div class="intro-text"><p class="center Mousefont intro-pitch textcolor"> I am
 interested in making art so dynamic and expressive the viewer wants to jump into the world themselves to take a look.</p></div>
 <hr class="hr1">
-    <div class="nodeco navbar cartonfont  shadow  padding container">
-
-
- 
+    <div class="nodeco navbar cartonfont  shadow  padding container" id="navbar">
   <div><a href="PersonalWork.html" class="headingcolor shadow nodeco  padding"> PERSONAL WORK </a></div>
   <div><a href="Contact.html" class="headingcolor nodeco shadow padding"> CONTACT</a></div>
 </div>
 <hr class="hr1">
-
-<div class="container2 padtop ">
-  <div class="gridItem"> <a href="VenusAcademy.html"> <img src="Venus_Academy_Title-04.jpg"   alt=""></a></div>
+<div class="main-wrapper">
+<div class="project-grid padtop">
   
-    <div class="gridItem"> <a href="JetStartum.html"> <img src="JetStartum_Diner_sign-01.png"  alt=""></a></div>
+  <div class="project-card">
+    <a href="VenusAcademy.html">
+      <img src="Venus_Academy_Title-04.jpg" alt="Venus Academy">
+    </a>
+    <div class="project-info">
+      <h3 class="cartonfont headingcolor shadow">Venus Academy</h3>
+      <p class="Mousefont">A passion project following Alexis Witherfly as she navigates a mysterious academy filled with secrets.</p>
+      <a href="VenusAcademy.html" class="project-link Mousefont">View Project →</a>
+    </div>
+  </div>
   
-  <div class="gridItem"> <a href="CityRebrand.html"> <img src="cityrebrand-03.png"   alt=""></a></div>
+  <div class="project-card">
+    <a href="JetStartum.html">
+      <img src="JetStartum_Diner_sign-01.png" alt="Jet Startum Diner">
+    </a>
+    <div class="project-info">
+      <h3 class="cartonfont headingcolor shadow">Jet Startum</h3>
+      <p class="Mousefont">A retro-futuristic space diner concept inspired by 1960s design and cartoon pinups.</p>
+      <a href="JetStartum.html" class="project-link Mousefont">View Project →</a>
+    </div>
+  </div>
+  
+  <div class="project-card">
+    <a href="CityRebrand.html">
+      <img src="cityrebrand-03.png" alt="Ocho Rios Rebrand">
+    </a>
+    <div class="project-info">
+      <h3 class="cartonfont headingcolor shadow">Ocho Rios</h3>
+      <p class="Mousefont">Complete city rebrand for Ocho Rios, Jamaica, celebrating culture and the island's 7 Heroes.</p>
+      <a href="CityRebrand.html" class="project-link Mousefont">View Project →</a>
+    </div>
+  </div>
+  
 </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navbar.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navbar.classList.remove('active');
+        });
+    });
+});
+</script>
+
 </body>
 </html>
