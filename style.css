@@ -44,6 +44,13 @@ letter-spacing: 1px;}
     margin: 0 0 40px 0;
 }
 
+.hero-image2 {
+    width: 100%;
+    max-width: 40%;
+    margin: auto
+}
+
+
 .hero-image img {
     width: 100%;
     height: auto;
@@ -401,7 +408,7 @@ grid-area: i;}
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-}
+
 
 .container7 div.text {
 grid-area: text;}

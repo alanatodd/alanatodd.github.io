@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>City Rebrand Project</title>
+</head>
+<body class="backcolor">
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+     <a href="index.html" class="nodeco"><h1 class="center mangofont titlecolor title">ALANA TODD</h1></a>
+
+     
+     <hr class="hr1">
+     <div class="nodeco navbar cartonfont  padding container" id="navbar">
+
+  
+ 
+  <div><a href="PersonalWork.html" class="headingcolor nodeco  padding shadow"> PERSONAL WORK </a></div>
+  <div><a href="VenusAcademy.html" class="headingcolor nodeco  padding shadow"> VENUS ACADEMY </a></div>
+  <div><a href="JetStartum.html" class="headingcolor nodeco  padding shadow"> JET STARTUM </a></div>
+  <div><a href="Contact.html" class="headingcolor nodeco padding shadow"> CONTACT</a></div>
+</div>
+<hr class="hr1">
+
+<!-- Hero Image -->
+<div class="hero-image2">
+  <img src="Wonderfell_Logo-01.png" alt="Wonderfell logo" width="500 px">
+</div>
+
+<div class="project-intro">
+  <h3 class="cartonfont headingcolor shadow section-title">Wonderfell Characters:</h3>
+  <p class="Mousefont textsize2">Wonderfell is a Alice in Wonderland reimagined in the urban fantasy genre. Alice falls through an NYC  manhole cover discovering surreal underground worlds.</p>
+</div>
+
+<!-- Event Section -->
+
+
+<div class="city-grid">
+  <div class="gridItem2">
+    <img src="Wonderfell_lineup.png" alt="Lineup of characters">
+    <p class="img-caption">Character Lineup: Alice, Mad Hatter, Queen of Hearts</p>
+    <p class="img-caption">The Mad Hatter and the Queen of Hearts character designs are inspired by Black Dandyism. Alice, who comes from the topside world is inspired by modern alternative fashion.</p>
+  </div>
+  <div class="gridItem2">
+    <img src="alice_clean.png" alt="Alice protagonist">
+    <p class="img-caption">Alice Character Sheet</p>
+    <p class="img-caption">Alice is a a young girl whose family just moved back to NYC. Her parents take to the city like ducks to water, even after so many years gone. Still unsure of the life here, young Alice is struggling to navigate through the hustle and bustle of NYC. </p>
+  </div>
+  <div class="gridItem2">
+    <img src="mad_hatter_final.png" alt="Mad Hatter Ally">
+    <p class="img-caption">Mad Hatter Character Sheet</p>
+    <p class="img-caption">This Mad Hatter is inspired by Black Dandyism. Black Dandysim is a cultural movement started by the enslaved Black people in the United States to show resistence and assert individuality when they were thought of as a commodity. Traditional Black dandies have worn various suits, but modern Black Dandyism explores more nuanced ways of self-expression using fashion.
+ The point is to use dressing well as a tool to show your individuality, and challenege sterotypes and societal limitations. This Mad Hatter is just as weird, eccentric, and crazy as the original, just with a different flair. </p>
+  </div>
+</div>
+
+
+<h3 class="cartonfont headingcolor shadow section-title">Prop Design</h3>
+
+<div class="city-grid-single">
+  <div class="gridItem2">
+    <img src="Pocket_Watch-01.png" alt="Pocket Watch">
+    <p class="img-caption"> Pocket Watch Prop</p>
+  </div>
+</div>
+
+</div>
+
+
+<h3 class="cartonfont headingcolor shadow section-title">Environmental Design</h3>
+<div class="project-intro">
+  
+
+<div class="city-grid-single">
+  <div class="gridItem2">
+    <img src="Wonderfell_Environment.png" alt="Wonderfell environment">
+    <p class="img-caption">Going Uptown - An environmental design for Wonderfell</p>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navbar.classList.toggle('active');
+    });
+    
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navbar.classList.remove('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
