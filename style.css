@@ -57,7 +57,7 @@ letter-spacing: 1px;}
     display: block;
 }
 
-/* City Rebrand Grid Layouts */
+/* City Rebrand  Layouts */
 .city-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -71,6 +71,13 @@ letter-spacing: 1px;}
     display: grid;
     grid-template-columns: 1fr;
     max-width: 800px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+.city-grid-single2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
     margin: 40px auto;
     padding: 0 40px;
 }
