@@ -14,7 +14,7 @@
 
 .mangofont{
     font-family: "Mango";
-    font-size: 100px;
+    font-size: 75px;
 }
 
 .mangofont2{
@@ -28,7 +28,7 @@ letter-spacing: 1px;}
 
     .cartonfont{
     font-family:"Cartoon" ;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -44,6 +44,11 @@ letter-spacing: 1px;}
     margin: 0 0 40px 0;
 }
 
+.hero-image3 {
+    width: 75%;
+    max-width: 75%;
+    margin: auto;
+}
 .hero-image2 {
     width: 100%;
     max-width: 40%;
@@ -225,10 +230,11 @@ grid-area: text;
 .container4 {
 display: grid;
  grid-template-areas:
-    "sign sign diner diner"
+    "sign sign sign sign"
+    "diner diner diner diner"
     "description description description description"
     "menu menu safety safety"
-    "posters posters posters posters";
+    ;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
   margin: 0 auto;
@@ -538,7 +544,7 @@ img{width:100%;}
 
 .intro-text {
     max-width: 700px;
-    margin: 0 auto 30px;
+    margin: 0 auto 5px;
     padding: 10px 20px;
 }
 
@@ -577,7 +583,7 @@ img{width:100%;}
 
 .section-title {
     text-align: center;
-    margin: 40px auto 20px;
+    margin: 10px auto 20px;
 }
 
 .video {
@@ -881,19 +887,7 @@ grid-area: symbol;
 grid-area: text;
 }
 
-.container4 {
-display: grid;
- grid-template-areas:
-    "sign diner diner "
-    "o o r"
-    "menu safety l "
-    "menu safety l "
-    "menu safety l "
-    "symbol symbol text";
-  grid-template-columns: 50% 50% 50%;
-  max-width: 70%;
 
-}
 
 .container4 div.sign {
 grid-area: sign;
