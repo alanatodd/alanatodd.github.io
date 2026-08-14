@@ -185,24 +185,91 @@ display: grid;
  grid-template-areas:
     "turn turn gif"
    "turn2 turn2 gif"
-    "o o o "
-    "sheet sheet sheet"
-    "icon icon icon"
+    "o o o  "
+    "sheet sheet sheet "
+    "be be be"
+    "cal cal cal"
+    "la la la "
+    "le le le"
+    "ho ho ho"
+    "hi hi hi "
+    "he he he"
+    "vi vi vi"
+    "ac ac ac"
+    "ske ske ske"
+    "ski ski ski"
+    "ba ba ba"
+    "fo fo fo"
+    "po po po"
+    "re re re "
+    "icon icon icon "
     "symbol symbol text";
   grid-template-columns: auto auto auto;
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px;
   gap: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
+  
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+ 
 }
 
 .mar{
     margin: auto;
 }
 
+.container3 div.ske {
+grid-area: ske;
+}
+
+.container3 div.ski {
+grid-area: ski;
+}
+
+
+.container3 div.le {
+grid-area: le;
+}
+
+
+.container3 div.vi {
+grid-area: vi;
+}
+
+.container3 div.hi {
+grid-area: hi;
+}
+.container3 div.he {
+grid-area: he;
+}
+
+.container3 div.re {
+grid-area: re;
+}
+
+.container3 div.po {
+grid-area: po;
+}
+
+.container3 div.fo {
+grid-area: fo;
+}
+
+.container3 div.ac {
+grid-area: ac;
+}
+
+.container3 div.la {
+grid-area: la;
+}
+
+.container3 div.ho {
+grid-area: ho;
+}
+
+.container3 div.ba {
+grid-area: ba;
+}
 .container3 div.turn {
     grid-area: turn;
 
@@ -227,6 +294,15 @@ grid-area: symbol;
 grid-area: text;
 }
 
+.container3 div.cal {
+    grid-area: cal;
+
+}
+
+.container3 div.be {
+    grid-area: be;
+
+}
 .container4 {
 display: grid;
  grid-template-areas:
@@ -478,7 +554,8 @@ grid-area: alana;}
 .nodeco{
     text-decoration: none;
 }
-img{width:100%;}
+img{max-width: 100%;
+height: auto;}
 /* .imgsize{
 
     height: 300px
@@ -492,12 +569,14 @@ img{width:100%;}
 
 .gridItem{
    max-width:100%;
+   height: auto;
     padding: 20px;
     box-sizing: border-box;
 }
 .gridItem2{
     max-width: 100%;
-    padding: 10px;
+    height: auto;
+    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -514,10 +593,10 @@ img{width:100%;}
 
 /* Improved image display */
 .gridItem2 img, .gridItem img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 /* Content grouping */
@@ -631,9 +710,9 @@ padding-top: 30px;
     display: none;
     flex-direction: column;
     cursor: pointer;
-    padding: 20px;
+    padding: 20 px;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 20px;
     z-index: 1001;
 }
@@ -792,12 +871,27 @@ padding-top: 30px;
     
     .container3 {
         grid-template-areas:
-            "turn gif"
-            "turn2 gif"
-            "o o"
-            "sheet sheet"
-            "icon icon"
-            "symbol text";
+            "turn turn gif"
+   "turn2 turn2 gif"
+    "o o o  "
+    "sheet sheet sheet "
+    "be be be"
+    "cal cal cal"
+    "la la la "
+    "le le le"
+    "ho ho ho"
+    "hi hi hi "
+    "he he he"
+    "vi vi vi"
+    "ac ac ac"
+    "ske ske ske"
+    "ski ski ski"
+    "ba ba ba"
+    "fo fo fo"
+    "po po po"
+    "re re re "
+    "icon icon icon "
+    "symbol symbol text";
     }
     
     .container4 {
@@ -837,9 +931,24 @@ display: grid;
  grid-template-areas:
     "turn turn gif"
    "turn2 turn2 gif"
-    "o o o "
-    "sheet sheet sheet"
-    "icon icon icon"
+    "o o o  "
+    "sheet sheet sheet "
+    "be be be"
+    "cal cal cal"
+    "la la la "
+    "le le le"
+    "ho ho ho"
+    "hi hi hi "
+    "he he he"
+    "vi vi vi"
+    "ac ac ac"
+    "ske ske ske"
+    "ski ski ski"
+    "ba ba ba"
+    "fo fo fo"
+    "po po po"
+    "re re re "
+    "icon icon icon "
     "symbol symbol text";
   grid-template-columns: auto auto auto;
 max-width: 70%;
@@ -848,11 +957,26 @@ max-width: 70%;
 .container3 {
 display: grid;
  grid-template-areas:
-    "turn turn gif"
+   "turn turn gif"
    "turn2 turn2 gif"
-    "o o o "
-    "sheet sheet sheet"
-    "icon icon icon"
+    "o o o  "
+    "sheet sheet sheet "
+    "be be be"
+    "cal cal cal"
+    "la la la "
+    "le le le"
+    "ho ho ho"
+    "hi hi hi "
+    "he he he"
+    "vi vi vi"
+    "ac ac ac"
+    "ske ske ske"
+    "ski ski ski"
+    "ba ba ba"
+    "fo fo fo"
+    "po po po"
+    "re re re "
+    "icon icon icon "
     "symbol symbol text";
   grid-template-columns: auto auto auto;
 max-width: 70%;
@@ -862,7 +986,58 @@ max-width: 70%;
 .mar{
     margin: auto;
 }
+.container3 div.ske {
+grid-area: ske;
+}
 
+.container3 div.ski {
+grid-area: ski;
+}
+
+
+.container3 div.le {
+grid-area: le;
+}
+
+
+.container3 div.vi {
+grid-area: vi;
+}
+
+.container3 div.hi {
+grid-area: hi;
+}
+.container3 div.he {
+grid-area: he;
+}
+
+.container3 div.re {
+grid-area: re;
+}
+
+.container3 div.po {
+grid-area: po;
+}
+
+.container3 div.fo {
+grid-area: fo;
+}
+
+.container3 div.ac {
+grid-area: ac;
+}
+
+.container3 div.la {
+grid-area: la;
+}
+
+.container3 div.ho {
+grid-area: ho;
+}
+
+.container3 div.ba {
+grid-area: ba;
+}
 .container3 div.turn {
     grid-area: turn;
 
