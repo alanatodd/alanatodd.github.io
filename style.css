@@ -316,9 +316,9 @@ display: grid;
   margin: 0 auto;
   padding: 40px;
   gap: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
+ 
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  ;
 }
 
 .container4 div.sign {
@@ -360,9 +360,9 @@ display: grid;
   margin: 0 auto;
   padding: 40px;
   gap: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
+ 
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+ 
 }
 
 .container5 div.event {
@@ -460,9 +460,9 @@ grid-area: l;}
   margin: auto;
   padding: 40px;
   gap: 20px;
-  background-color: rgba(255, 255, 255, 0.4);
+  
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+ 
 }
 
 .container6 div.q {
@@ -492,9 +492,9 @@ grid-area: i;}
     margin: auto;
     padding: 40px;
     gap: 30px;
-    background-color: rgba(255, 255, 255, 0.4);
+   
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+   
 }
 
 
@@ -746,6 +746,11 @@ padding-top: 30px;
         padding: 10px;
     }
     
+    .container3 {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 10px;
+    }
     /* Project grid becomes single column */
     .project-grid {
         grid-template-columns: 1fr;
@@ -770,7 +775,7 @@ padding-top: 30px;
         grid-template-columns: 1fr;
         grid-template-areas: none;
         padding: 20px;
-        gap: 20px;
+        gap: 10px;
         max-width: 95%;
     }
     
@@ -1062,6 +1067,15 @@ grid-area: symbol;
 grid-area: text;
 }
 
+.container3 div.cal {
+    grid-area: cal;
+
+}
+
+.container3 div.be {
+    grid-area: be;
+
+}
 
 
 .container4 div.sign {
