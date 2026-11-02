@@ -31,6 +31,14 @@ letter-spacing: 1px;}
     font-size: 40px;
     letter-spacing: 2px;
 }
+.middle {
+     display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+   align-items: center;
+     
+    }
 
 .cartonfont2{
     font-family:"Cartoon" ;
@@ -96,9 +104,9 @@ letter-spacing: 1px;}
 /* Project Grid for Index Page */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px 20px;
 }
@@ -312,10 +320,13 @@ grid-area: text;
 .container4 {
 display: grid;
  grid-template-areas:
-    "sign sign sign sign"
+    "x sign sign p"
     "diner diner diner diner"
     "description description description description"
     "menu menu safety safety"
+    "food food food food"
+    "pose pose m h"
+
     ;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
@@ -334,6 +345,10 @@ grid-area: sign;
 grid-area: diner;
 }
 
+.container4 div.pose {
+grid-area: pose;
+}
+
 .container4 div.o {
 grid-area: description;
 }
@@ -345,7 +360,9 @@ grid-area: safety;
 .container4 div.menu {
 grid-area: menu;
 }
-
+.container4 div.food {
+grid-area: food;
+}
 
 .container5 {
 display: grid;
