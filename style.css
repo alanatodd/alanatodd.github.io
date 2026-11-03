@@ -69,6 +69,15 @@ letter-spacing: 1px;}
     margin: auto
 }
 
+.hero-image4 {
+    width: 100%;
+    max-width: 25%;
+    display: block;
+  margin: auto;
+ 
+  border-top: 10px;
+  
+}
 
 .hero-image img {
     width: 100%;
@@ -192,6 +201,13 @@ padding: 5px;
   
 }
 
+.container8{
+     grid-template-columns: auto auto auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 30px;
+}
 
 
 .container3 {
